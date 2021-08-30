@@ -1,0 +1,158 @@
+<!DOCTYPE html><!--Author: Pranav Rajpurkar 2016-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The AdvGLUE Dataset</title>
+    <meta name="description" content="AdvGLUE Dataset is a new reading comprehension dataset, ...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:image" content="/logo.png">
+    <link rel="image_src" type="image/png" href="/adversarialglue.github.io/logo.png">
+    <link rel="shortcut icon" href="/adversarialglue.github.io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/adversarialglue.github.io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/adversarialglue.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/adversarialglue.github.io/stylesheets/layout.css">
+    <link rel="stylesheet" href="/adversarialglue.github.io/stylesheets/index.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="/adversarialglue.github.io/javascripts/analytics.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
+    <div class="container clearfix" id="navContainer">
+        <div class="rightNav">
+            <div class="collapseDiv">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar"><span
+                        class="glyphicon glyphicon-menu-hamburger"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/adversarialglue.github.io/">Home</a></li>
+                    <li><a href="/adversarialglue.github.io/explore">Explore</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leftNav">
+            <div class="brandDiv"><a class="navbar-brand" href="/adversarialglue.github.io/">AdvGLUE</a></div>
+        </div>
+    </div>
+</div>
+<div class="cover" id="topCover">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1 id="appTitle"><b>AdvGLUE</b></h1>
+                <h2 id="appSubtitle">The Adversarial GLUE Dataset</h2></div>
+        </div>
+    </div>
+</div>
+<div class="cover" id="contentCover">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="infoCard">
+                    <div class="infoBody">
+                        <div class="infoHeadline"><h2>What is AdvGLUE?</h2></div>
+                        <p><span>Adversarial GLUE Dataset (AdvGLUE)</span> is a comprehensive benchmark dataset that
+                            focuses on adversarial robustness evaluation of language models. It covers five sentence
+                            understanding tasks from the famous GLUE tasks and create an adversarial version of
+                            GLUE benchmark.</p>
+
+                        <!--                        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~xcj/5.embed" height="100%" width="100%"></iframe>-->
+
+                        <hr>
+                        <p> AdvGLUE considers textual adversarial attacks from different perspectives and
+                            hierarchies, including word-level transformations, sentence-level manipulations, and
+                            human-written adversarial examples, which provides comprehensive coverage of various
+                            adversarial linguistic phenomena. </p>
+                        <a class="btn actionBtn" href="/adversarialglue.github.io/explore">Explore AdvGLUE</a>
+                        <a class="btn actionBtn" href="https://openreview.net/forum?id=GF9cSKI3A_q">AdvGLUE
+                            paper </a>
+                        <div class="infoHeadline"><h2>Getting Started</h2></div>
+                        <p>We've built a few resources to help you get started with the dataset.</p>
+                        <p> Download a copy of the dataset (distributed under the <a
+                                href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
+                            license):
+                        <ul class="list-unstyled">
+                            <li><a class="btn actionBtn inverseBtn" href="/adversarialglue.github.io/dataset/dev.json" download>Dev
+                                Set (199 KB)</a></li>
+                        </ul>
+                        </p><p>To evaluate your models, we have also made available the evaluation script we will use
+                        for official evaluation, along with a sample prediction file that the script will take as input.
+                        To run the evaluation, use <code>python evaluate.py &lt;path_to_dev&gt; &lt;path_to_predictions&gt;</code>.
+                        <ul class="list-unstyled">
+                            <li><a class="btn actionBtn inverseBtn"
+                                   href="https://worksheets.codalab.org/rest/bundles/0xdebf0dffbcad42dc92ecbe71679863cf/contents/blob/"
+                                   download>Evaluation Script</a></li>
+                            <li><a class="btn actionBtn inverseBtn"
+                                   href="https://worksheets.codalab.org/bundles/0xcb8ebb3034cc498d87ef7521f1f7cfc0/"
+                                   download>Sample Prediction File (on Dev)</a></li>
+                        </ul>
+                        </p><p>Once you have a built a model that works to your expectations on the dev set, you submit
+                        it to get official scores on the dev and a hidden test set. To preserve the integrity of test
+                        results, we do not release the test set to the public. Instead, we require you to submit your
+                        model so that we can run it on the test set for you. Here's a tutorial walking you through
+                        official evaluation of your model:</p><a class="btn actionBtn inverseBtn"
+                                                                 href="https://worksheets.codalab.org/worksheets/0x023aaebc1cd74f3fb8eccc57643687dd/">Submission
+                        Tutorial</a>
+                        <p>Because AdvGLUE is an ongoing effort, we expect the dataset to evolve.</p>
+                        <div class="infoHeadline"><h2>Have Questions?</h2></div>
+                        <p> Ask us questions at <a href="mailto:boxinw2@illinois.edu">boxinw2@illinois.edu</a> and <a
+                                href="mailto:xuchejian@zju.edu.cn">xuchejian@zju.edu.cn</a>.</p></div>
+                    <div class="infoSubheadline">
+<!--                        <a class="github-button" href="https://github.com/adversarialglue/adversarialglue.github.io" data-icon="octicon-star"-->
+<!--                           data-style="mega" data-count-href="/rajpurkar/adversarialglue.github.io/stargazers"-->
+<!--                           data-count-api="/repos/rajpurkar/adversarialglue.github.io#stargazers_count"-->
+<!--                           data-count-aria-label="# stargazers on GitHub"-->
+<!--                           aria-label="Star rajpurkar/adversarialglue.github.io on GitHub">Star</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="infoCard">
+                    <div class="infoBody">
+                        <div class="infoHeadline"><h2>Leaderboard</h2></div>
+                        <p>AdvGLUE is an adversarial robustness benchmark dataset that thoroughly tests and analyzes the
+                            vulnerabilities of natural language understanding systems to different adversarial
+                            transformations.</p>
+                        <table class="table performanceTable">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Model</th>
+                                <th>Score</th>
+                            </tr>
+
+                            <!--                            Replace Here-->
+                            <tr>
+                                <td><p>1</p><span class="date label label-default">Aug 25, 2021</span></td>
+                                <td style="word-break:break-word;"><a class="link"
+                                                                      href="/adversarialglue.github.io/models/BERT (single model).html">BERT
+                                    (single model)</a>
+                                    <p class="institution">UIUC</p></td>
+                                <td><b>0.3341</b></td>
+                            </tr>
+                            <!--                            Replace End-->
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-static-bottom footer">
+    <div class="container clearfix">
+        <div class="rightNav">
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/adversarialglue.github.io/">AdvGLUE</a></li>
+                    <li><a href="https://aisecure.github.io/">UIUC Secure Learning Lab</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script src="/adversarialglue.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/adversarialglue.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
