@@ -101,6 +101,7 @@ fieldset {
   display: inline-block;
   vertical-align: baseline;
   font-weight: bold;
+  color: #FF616D;
 }
 @media (min-width: 600px) {
   .adversarial-text {
